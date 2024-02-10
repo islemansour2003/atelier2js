@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>inscription</title>
+</head>
+
+<body>
+    <a name="haut"></a>
+    <p align="right"><a href="#bas">bas de la page</a></p>
+    <a href="home.html">home</a>
+    <a href="inscription.html">inscription</a>
+    <a href="projets et taches.html">projets et taches</a>
+    <a href="listes employees.html">listes employees</a>
+    <a href="#">listes employees</a>
+    <br>
+    <br>
+    <center>
+        <img src="assets/téléchargement (1).jfif" width="900" height="500" align="center" alt="image">
+        <br>
+        <br>
+    </center>
+    <form action="inscriptionreussi.html" method="get">
+        <h1>
+            <font color=red>inscription au site:</font>
+        </h1>
+
+        <br>
+        <label><b>nom:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</b><span>
+                <font color=orange>*</font>
+            </span></label>
+        <input type="text" name="nom" minlength="2" required placeholder="taper votre nom" size="50" pattern="[a-zA-Z]+"
+            title="veuiller enter un format specifique">
+        <br>
+        <br>
+        <label><b>prenom:&nbsp&nbsp&emsp;&emsp;&emsp;&emsp;</b><span>
+                <font color=orange>*</font>
+            </span></label>
+        <input type="text" name="prenom" minlength="2" required placeholder="taper votre nom" size="50"
+            pattern="[a-zA-Z]+" title="veuiller enter un format specifique"><!--pattern="[a-zA-Z]{2}-->
+        <br>
+        <br>
+        <label><b>Telephone:&nbsp&nbsp&emsp;&emsp;&emsp;</b><span>
+                <font color=orange>*</font>
+            </span></label>
+        <input type="tel" name="telephone" pattern="[0-9]{8}" size="50" required placeholder="taper votre telephone"
+            title="veuiller enter un format specifique">
+        <br>
+        <br>
+        <label><b>Email:&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;</b><span>
+                <font color=orange>*</font>
+            </span></label>
+        <input type="email" size="50" name="email" required placeholder="taper votre email" title="veuiller enter"
+            pattern=".+@esprit.tn">
+        <br>
+        <br>
+        <label><b>Date de naissance:&nbsp&nbsp</b><span>
+                <font color=orange>*</font>
+            </span></label>
+        <input type="date" size="50" name="date naissance " required placeholder="taper votre date de naissance  title="
+            veuiller enter"   id='dateOfBirth' >
+        <br>
+        <br>
+        <label><b>Mot de passe:&emsp;&emsp;&nbsp&nbsp</b><span>
+                <font color=orange>*</font>
+            </span></label>
+        <input type="password" name="mot de passe" size="50" required placeholder="taper votre password"
+            pattern="{a-zA-Z0-9}{8,}" title="veuiller enter" minlength="8">
+        <br>
+        <br>
+        /*<input type="submit" value="envoyer" onclick="validerdatebirth()">*/
+        <button onclick="validerDateOfBirth()">Valider</button>
+
+        <br>
+        <br>
+        <input type="reset" value="annuler">
+    </form>
+
+    <br>
+    <p align="right"><a href="#haut">haut de la page</a></p>
+
+    <hr size="3" color="grey">
+    <p>vous pouver nous contacter:<a href="#">contact@esprit.tn</a></p>
+    <p>Adresse:Ariana-Ghazela</p>
+    <script src="inscription.js"></script>
+
+    <a name="bas"></a>
+</body>
+
+</html>
